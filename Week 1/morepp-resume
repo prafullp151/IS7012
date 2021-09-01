@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        morepp-resume
+    </title>
+    <style>
+        th,
+        td {
+            border: 1pt solid rgb(0, 17, 255);
+            padding: 2px 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+
+<body>
+    <img style="width: 300px;"
+        src="https://lh3.googleusercontent.com/od8Mmz3qYYdjrmueW8ugCeRSMPwsPZ9fc2ch4lhDVAA1qKrl7uXFkrRzMujE27fBFkRIf8U4tjwWxLCV1Bh7uDtW0go64cf2gB5CqHJ2iAGBJ9v-NTZ5decwT3or6WuHhvMerSBw-PTI7Gcplk2tAME4yJiMBNZ0TNs9J7hjPdAqIGE6Aw0uLx89MKP89xuuArErzk5Pe2WLAxlgFTPMwYIOdxpom5If_0VB3Ky0FOvL523U7ZR73-UrTyfx9-o7_45VEA2liTidi28rKNoDNGAmF17Q4a2gpq20bUJ9aejaJzYjJhqPv3Vezm6zvpPhrGiliY0Mhez3ofwXNqEf_JUgvI5b48qxvjU1f5RRd1avrEZ2xU1GwNqDaMaW2D-2EUNftRc6XKoKphY-aDJfv6Bn4xYhSm8GKXCG0DGExUCNOXdfu-dLy2Ud6-0A041l_qWt9SkB2g3N89lDTAf13_R8rIA_TaeJRQG6etORBvvBLrFoYbahbYY6MNTvcxuvXrZF-b1eQ1MvaS3o5hP4_uwZAOFPGudJymcoS952RRdyGLH3kOhovx3v7EyMIrMTgOPWqwWyWz-HZNcXRV5p67x7aeJy45PkiX1o36Ol7NLZus7ojSXT2jFNeDFEGDup1ucT6MWqlGUzt41AZI-WotrHnyXyxK3hlYFddNbLrNMCGAgB-RB2EMP-8cglwQD842FIBkNnkAW0W0En2UTgrmDu=s600-no?authuser=0"
+        alt="">
+    <h1> <a href="https://www.linkedin.com/in/prafull-more-pmp-17594917a"> PRAFULL MORE </a></h1>
+    <h2>Data Scientist</h2>
+    <h3>United States Citizen.</h3>
+    <address>3866 Silver queen Ct. <br> Mason, Ohio 45036</address>
+
+    <hr>
+    <p>
+    <h3>PROFILE</h3>
+    <ul>
+        <li><b>Ability to apply Analytical skills for Business and data analytics.</li>
+        <li>Good fit for Analytical Business Administration, Predictive modelling and time series forecasting.</li>
+        <li>Possess mainframes, Data mining, Data warehousing skills.</b></li>
+        <li>Extensive experience in leading multiple Projects across Onsite/Offshore model with different roles.</li>
+        <li>Good analytical and problem-solving skills.</li>
+        <li>18 years of experience in analysis, design, development, maintenance, testing and implementation of
+            projects/Enhancements on Mainframe in Banking, Finance, Healthcare, Manufacturing.</li>
+        <li>24x7 production support on-call rotation experience.</li>
+    </ul>
+    </p>    
+    <hr> <h4>DATA SCIENCE SKILLS</h4>
+            Data Analytics: 
+            R, Python, SAS 
+            <br>
+            AI and ML using Python
+            <br>
+            Tableau
+            <br>
+            Rockwell Arena Simulation
+            <br>
+            .Net, C#, Web development
+            <br>
+            Big Data – Hadoop, Pig, Hive, Scala
+            <br>
+            Portfolio Management using Excel optimization tools.
+
+    <hr>
+    <h3>EDUCATION</h3>
+    <table>
+        <thead>
+            <td>Degree</td>
+            <td>Stream</td>
+            <td>University</td>
+            <td>GPA</td>
+            <td>Year</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Master of Science</td>
+                <td>Business Analytics Business Administration</td>
+                <td>University of Cincinnati, Ohio, USA</td>
+                <td>3.97/4</td>
+                <td>FA’21</td>
+            </tr>
+            <tr>
+                <td>Bachelors of Engineering</td>
+                <td>Instrumentation</td>
+                <td>Mumbai University, Mumbai, India</td>
+                <td>3.35/4</td>
+                <td>1997</td>
+            </tr>
+        </tbody>
+    </table>
+    <h3>CERTIFICATIONS</h3>
+    <Ol>
+        <li> <i> PMP. Project management professional. Certificate # 1504753</i></li>
+        <li>Healthcare level E certification from Syntel.</li>
+        <li>Agile Certificate from Syntel.</li>
+        <li>Big Data Developer from Simpli-learn</li>
+    </Ol>
+    <hr>
+    <h3>WORK EXPERIENCE</h3>
+    <h4>PNC Bank / TCS - Technical Lead &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since 03/2021</h4>
+    Skills used: COBOL 3, CICS, JCL, FILE aid, HOGAN IDS TDA DDA
+    <br> Role: Hogan Technical lead.
+
+    <h4>Freddie Mac / TCS - Technical Lead &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since 06/2020 – 02/2021</h4>
+    Skills used: COBOL 3, CICS, JCL, FILE aid
+    <br> Role: Mainframe developer for Single Family reimagination project.
+
+    <h4>PENFED CU / TCS - Technical Lead &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Since 11/2016 – 04/2020</h4>
+    Skills used: COBOL 3, CICS, VSAM, JCL, FILE aid, Xpeditor, KORE, INFOPAC, Eazytrieve, CA-7, Librarian.
+    HOGAN ILP, CIS, IDS system.
+    <br> Role: <br>
+    <ul>
+        <u>Tech Lead on the Hogan Mainframe system.</u>
+        <li>Built Loan application manual authority approval system. Wrote an online COBOL program using PCD. Created
+            new PCD and map Hogan.</li>
+        <li>Created batch extract for deceased member account and liabilities list. Wrote a batch HOGAN program and job
+            to ftp the extract.</li>
+        <li>Created extract for Auto loans from loans db. Wrote a batch COBOL program to extract the data in CSV format
+            and a Job to ftp the same.</li>
+        <li>Debug issues in Online Hogan using KORE, XPED.</li>
+        <li>Research online and batch abends using PEMDUMPS and fix issues permanently.</li>
+        <li>Use File-aid to read VSAM files and HDB files.</li>
+        <li>Use SORT to create the extracts needed for BU.</li>
+        <li>Create SPS reports for the BU and Debug/Fix issues.</li>
+        <li>Debug and fix batch issues using Batch XPED.</li>
+        <li>Work in Agile model using JIRA.</li>
+        <li>Resolved tickets of Severity 1, 2 and 3.</li>
+        <li>Created extracts using Hogan EZtrieve programs.</li>
+        <li>24x7 On-call rotation for Production Batch support.</li>
+    </ul>
+    <hr>
+    <h4>Humana / Syntel - Project Lead, Project Manager &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1/2008–10/2016
+    </h4>
+    Skills used: COBOL 3, DB2, CICS, VSAM, JCL, FILE AID, Abend aid, TMON, SPUFI, PLATINUM, Xpeditor, STROBE, MQ-series,
+    QMS, INFOPAC, Eazytrieve, DB2 Stored Procedure, DB2I, CA-7, PANVALET, RDZ, RTC, RAA, IDMS
+    <h4>Goldman Sachs / Keane - Senior Consultant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1/2003–2/2008
+    </h4>
+    Skills Used:
+    MVS, JCL, PROC, FILE-AID, OLQ, ADSC, MAPC, OS/390, ADSALIVE, ADSA, FTP, TSO/ISPF, ENDEVOR, INTERTST, CEDF, MQSeries,
+    Merva, Guaranteed Delivery, SWIFT, TMON (Transaction Monitor), MQMON (MQ Monitor)
+    <h4>General Electric Aircraft Engines / Patni Computers - Software Engineer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        3/2001-1/2003
+    </h4>
+    Skills: DB2, CICS, IDMS, ADSO, Cobol, MVS/JCL, VSAM, OLQ, ADSC, MAPC, OS/390, ADSALIVE, ADSA, FTP, TSO/ISPF, UCC7,
+    Changeman
+<hr>
+</body>
+
+</html>
