@@ -18,7 +18,8 @@ namespace RecruitCatmorepp.Models
         public int JobTitleId { get; set; }
         public Industry Industry { get; set; }
         public int IndustryId { get; set; }
-
+        public string PreferredLocation { get; set; }
+        public Boolean OpenForRelocation { get; set; }
     }
 
 }

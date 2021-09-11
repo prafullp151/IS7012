@@ -17,6 +17,8 @@ namespace RecruitCatmorepp.Models
         public List<Candidate> Candidates { get; set; }
         public Industry Industry { get; set; }
         public int IndustryId { get; set; }
+        public string CompanyAddress { get; set; }
+        public decimal AnnualRevenue { get; set; }
 
     }
 
