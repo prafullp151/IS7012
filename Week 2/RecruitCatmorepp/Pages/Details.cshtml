@@ -1,5 +1,5 @@
 ﻿@page
-@model RecruitCatmorepp.Pages.JobTitles.DetailsModel
+@model RecruitCatmorepp.Pages.DetailsModel
 
 @{
     ViewData["Title"] = "Details";
@@ -30,10 +30,10 @@
             @Html.DisplayFor(model => model.JobTitle.MaxSalary)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.JobTitle.Skills)
+            @Html.DisplayNameFor(model => model.JobTitle.WorkHrsPerDay)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.JobTitle.Skills)
+            @Html.DisplayFor(model => model.JobTitle.WorkHrsPerDay)
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.JobTitle.PercentTravelRequired)
@@ -42,10 +42,10 @@
             @Html.DisplayFor(model => model.JobTitle.PercentTravelRequired)
         </dd>
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.JobTitle.WorkHrsPerDay)
+            @Html.DisplayNameFor(model => model.JobTitle.Skills)
         </dt>
         <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.JobTitle.WorkHrsPerDay)
+            @Html.DisplayFor(model => model.JobTitle.Skills)
         </dd>
     </dl>
 </div>
