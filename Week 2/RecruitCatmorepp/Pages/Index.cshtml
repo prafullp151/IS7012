@@ -1,142 +1,66 @@
 ﻿@page
-@model IndexModel
+@model RecruitCatmorepp.Pages.IndexModel
+
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Index";
 }
 
-<div>
-    <h1 class="display-4 alert-dark">Welcome</h1>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <h4 class="alert-light">
-                We are a recruiting agency. We have many mice LLCs looking to recruit Cats. <br />
+<h1>Index</h1>
 
-                Here are a few of those top employers.
-            </h4>
-            <ul class="list-group-horizontal-sm alert-info">
-                <li>
-                    <h5>Walt Disney Mice Corporation</h5>
-                </li>
-                <li>
-                    <h5>ABC Mice Corporation</h5>
-                </li>
-                <li>
-                    <h5>Ratullie Corporation</h5>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col alert-primary">
-            <h4>
-                All other interested mice corporations, Please register here
-            </h4>
-            <div class="row align-content-lg-start">
-                <form method="post">
-                    <fieldset id="companyInfo">
-                        <legend><strong>Company Information</strong></legend>
-                        <!--                       <input type="hidden" value="@Model." id="tourId" name="tourId" />
-                        -->
-                        <p>
-                            <label for="name">Name</label>
-                            <input name="name"
-                                   type="text"
-                                   class="text"
-                                   id="name"
-                                   tabindex="100"
-                                   placeholder="Company Name"
-                                   required>
-                        </p>
-                        <p>
-                            <label for="email">Mice Population</label>
-                            <input name="micepop"
-                                   type="number"
-                                   class="text"
-                                   id="micepop"
-                                   tabindex="110"
-                                   placeholder="number of mice">
-                        </p>
-                        <p>
-                            <label for="email">Email</label>
-                            <input name="email"
-                                   type="email"
-                                   class="text"
-                                   id="email"
-                                   tabindex="120"
-                                   placeholder="valid email address"
-                                   required>
-                        </p>
-                        <p>
-                            <label for="transport">Urgent</label>
-                            <input name="urgent"
-                                   type="checkbox"
-                                   id="urgent"
-                                   tabindex="130" />
-                        </p>
-                        <p>
-                            <input type="submit" name="submit2" id="submit2" value="Submit" tabindex="300">
-                        </p>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-        <div class="col alert-danger">
-            <h4>
-                All interested Cats Please register here.
-            </h4>
-            <div class="row align-content-lg-start">
-                <form method="post">
-                    <fieldset id="catInfo">
-                        <legend><strong>Cat Information</strong></legend>
-                        <!--                       <input type="hidden" value="@Model." id="tourId" name="tourId" />
-                -->
-                        <p>
-                            <label for="catName">Name</label>
-                            <input name="name"
-                                   type="text"
-                                   class="text"
-                                   id="catName"
-                                   tabindex="100"
-                                   placeholder="Cat Name"
-                                   required>
-                        </p>
-                        <p>
-                            <label for="skills">Expertise/Skills</label>
-                            <input name="micepop"
-                                   type="text"
-                                   class="text"
-                                   id="micepop"
-                                   tabindex="110"
-                                   placeholder="Skills">
-                        </p>
-                        <p>
-                            <label for="catemail">Email</label>
-                            <input name="cat email"
-                                   type="email"
-                                   class="text"
-                                   id="catemail"
-                                   tabindex="120"
-                                   placeholder="valid email address"
-                                   required>
-                        </p>
-                        <p>
-                            <label for="canbell">Can Bell Hunter Cat?</label>
-                            <input name="canbell"
-                                   type="radio"
-                                   id="canbell"
-                                   tabindex="130" 
-                                   required/>
-                        </p>
-                        <p>
-                            <input type="submit" name="submit2" id="submit2" value="Submit" tabindex="300">
-                        </p>
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].MinSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].MaxSalary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].WorkHrsPerDay)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].PercentTravelRequired)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle[0].Skills)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.JobTitle) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MinSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MaxSalary)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WorkHrsPerDay)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PercentTravelRequired)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Skills)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.JobTitleId">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.JobTitleId">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.JobTitleId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
