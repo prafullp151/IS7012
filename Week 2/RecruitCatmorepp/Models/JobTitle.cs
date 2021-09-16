@@ -13,6 +13,7 @@ namespace RecruitCatmorepp.Models
         public int JobTitleId { get; set; }
         public List<Candidate> Candidates { get; set; }
         public string WorkHrsPerDay { get; set; }
+        public string Skills { get; set; }
         public int PercentTravelRequired { get; set; }
     }
 
