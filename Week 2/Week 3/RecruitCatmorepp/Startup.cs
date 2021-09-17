@@ -10,6 +10,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using RecruitCatmorepp.Data;
+using Gtt.Uc.EntityFramework;
 
 namespace RecruitCatmorepp
 {
@@ -27,8 +28,9 @@ namespace RecruitCatmorepp
         {
             services.AddRazorPages();
 
-            services.AddDbContext<RecruitCatmoreppContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("RecruitCatmoreppContext")));
+            //   services.AddDbContext<RecruitCatmoreppContext>(options =>
+            //         options.UseSqlServer(Configuration.GetConnectionString("RecruitCatmoreppContext")));
+            services.AddGttMem<RecruitCatmoreppContext>("274848e9-aee6-4f30-ba6c-fdd0c08d4213");
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
