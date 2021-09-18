@@ -28,7 +28,9 @@ namespace RecruitCatmorepp.Pages.JobTitles
                 return NotFound();
             }
 
-            JobTitle = await _context.JobTitle.FirstOrDefaultAsync(m => m.JobTitleId == id);
+            JobTitle = await _context.JobTitle
+                .Include(x=>x.Candidates)
+                .FirstOrDefaultAsync(m => m.JobTitleId == id);
 
             if (JobTitle == null)
             {

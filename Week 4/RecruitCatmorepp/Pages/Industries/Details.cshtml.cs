@@ -28,7 +28,9 @@ namespace RecruitCatmorepp.Pages.Industries
                 return NotFound();
             }
 
-            Industry = await _context.Industry.FirstOrDefaultAsync(m => m.IndustryId == id);
+            Industry = await _context.Industry
+                                     .Include(x=>x.Companies)
+                                     .FirstOrDefaultAsync(m => m.IndustryId == id);
 
             if (Industry == null)
             {

@@ -19,6 +19,36 @@
         </dd>
     </dl>
 </div>
+@if (Model.Industry.Companies.Any())
+{
+    <div>
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Industry.Companies[0].CompanyName) </th>
+                    <th>@Html.DisplayNameFor(model => model.Industry.Companies[0].CompanyAddress) </th>
+                    <th>@Html.DisplayNameFor(model => model.Industry.Companies[0].AnnualRevenue) </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Industry.Companies)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.CompanyName) </td>
+                        <td>@Html.DisplayFor(modelItem => item.CompanyAddress) </td>
+                        <td>@Html.DisplayFor(modelItem => item.AnnualRevenue) </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="alert-warning">
+        No Companies exit for this industry
+    </div>
+}
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Industry.IndustryId">Edit</a> |
     <a asp-page="./Index">Back to List</a>

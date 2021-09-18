@@ -29,7 +29,8 @@ namespace RecruitCatmorepp.Pages.Companies
             }
 
             Company = await _context.Company
-                .Include(c => c.Industry).FirstOrDefaultAsync(m => m.CompanyId == id);
+                .Include(c => c.Candidates)
+                .FirstOrDefaultAsync(m => m.CompanyId == id);
 
             if (Company == null)
             {

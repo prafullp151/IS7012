@@ -67,6 +67,39 @@
         </dd>
     </dl>
 </div>
+@if (Model.Company.Candidates.Any())
+{
+    <div>
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Company.Candidates[0].FullName) </th>
+                    <th>@Html.DisplayNameFor(model => model.Company.Candidates[0].PreferredLocation) </th>
+                    <th>@Html.DisplayNameFor(model => model.Company.Candidates[0].OpenForRelocation) </th>
+                    <th>@Html.DisplayNameFor(model => model.Company.Candidates[0].TargetSalary) </th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Company.Candidates)
+                {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.FullName) </td>
+                    <td>@Html.DisplayFor(modelItem => item.PreferredLocation) </td>
+                    <td>@Html.DisplayFor(modelItem => item.OpenForRelocation) </td>
+                    <td>@Html.DisplayFor(modelItem => item.TargetSalary) </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="alert-warning">
+        No Candidates exit for this Company
+    </div>
+}
+
 <div>
     <a asp-page="./Edit" asp-route-id="@Model.Company.CompanyId">Edit</a> |
     <a asp-page="./Index">Back to List</a>
