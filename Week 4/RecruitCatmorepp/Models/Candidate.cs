@@ -11,9 +11,11 @@ namespace RecruitCatmorepp.Models
     {
         [Required(ErrorMessage = "First Name is a mandatory field")]
         [DisplayName("First Name")]
+        [StringLength(25)]
         public string FirstName { get; set; }
         [DisplayName("Last Name")]
         [Required(ErrorMessage = "Last Name is a mandatory field")]
+        [StringLength(25)]
         public string LastName { get; set; }
         [DisplayName("Target Salary")]
         public decimal TargetSalary { get; set; }
@@ -36,9 +38,17 @@ namespace RecruitCatmorepp.Models
         public int IndustryId { get; set; }
         [DisplayName("Preferred Location")]
         [Required(ErrorMessage = "Preferred Location is a mandatory field")]
+        [StringLength(50)]
         public string PreferredLocation { get; set; }
         [DisplayName("I am open for Relocation")]
         public Boolean OpenForRelocation { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
+            }
+        }
     }
 
 }

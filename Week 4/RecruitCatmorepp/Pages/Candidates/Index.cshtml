@@ -5,10 +5,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>All Candidates</h1>
 
 <p>
-    <a asp-page="Create">Create New</a>
+    <a asp-page="Create">Create New Candidate Profile</a>
 </p>
 <table class="table">
     <thead>
@@ -59,13 +59,13 @@
                 @Html.DisplayFor(modelItem => item.StartDate)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Company.CompanyId)
+                @Html.DisplayFor(modelItem => item.Company.CompanyName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.JobTitle.JobTitleId)
+                @Html.DisplayFor(modelItem => item.JobTitle.Title)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Industry.IndustryId)
+                @Html.DisplayFor(modelItem => item.Industry.IndustryName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.PreferredLocation)

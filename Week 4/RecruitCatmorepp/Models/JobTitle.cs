@@ -11,6 +11,7 @@ namespace RecruitCatmorepp.Models
     {
         [Required(ErrorMessage = "Job Title is a mandatory field")]
         [DisplayName("Job Title")]
+        [StringLength(100)]
         public string Title { get; set; }
         [DisplayName("Minimum Salary")]
         public decimal MinSalary { get; set; }

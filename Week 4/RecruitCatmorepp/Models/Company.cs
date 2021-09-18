@@ -12,9 +12,11 @@ namespace RecruitCatmorepp.Models
     {
         [DisplayName("Company Name")]
         [Required(ErrorMessage ="Company Name is a mandatory field")]
+        [StringLength(100)]
         public string CompanyName { get; set; }
         [Required(ErrorMessage = "Job Title is a mandatory field")]
         [DisplayName("Job Title")]
+        [StringLength(100)]
         public string JobPosition { get; set; }
         [DisplayName("Minimum Salary")]
         [DataType(DataType.Currency)]
@@ -27,6 +29,7 @@ namespace RecruitCatmorepp.Models
         public DateTime? StartDate { get; set; }
         [DisplayName("Job Location")]
         [Required(ErrorMessage = "Job Location is a mandatory field")]
+        [StringLength(50)]
         public string JobLocation { get; set; }
         [DisplayName("Company Id")]
         public int CompanyId { get; set; }
