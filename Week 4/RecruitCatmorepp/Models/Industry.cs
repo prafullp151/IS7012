@@ -9,6 +9,7 @@ namespace RecruitCatmorepp.Models
 {
     public class Industry
     {
+        [Required(ErrorMessage = "Industry Name is a mandatory field")]
         [DisplayName("Industry Name")]
         public string IndustryName { get; set; }
         [DisplayName("Industry Id")]
