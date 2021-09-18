@@ -18,6 +18,7 @@ namespace RecruitCatmorepp.Models
         [StringLength(25)]
         public string LastName { get; set; }
         [DisplayName("Target Salary")]
+        [Range(100,500000)]
         public decimal TargetSalary { get; set; }
         [DisplayName("Start Date")]
         [DataType(DataType.Date)]

@@ -44,6 +44,7 @@ namespace RecruitCatmorepp.Models
         public string CompanyAddress { get; set; }
         [DisplayName("Annual Revenue")]
         [DataType(DataType.Currency)]
+        [Range(10000,99999999999999999)]
         public decimal AnnualRevenue { get; set; }
 
     }

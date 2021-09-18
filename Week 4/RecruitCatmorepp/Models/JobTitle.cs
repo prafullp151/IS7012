@@ -14,8 +14,10 @@ namespace RecruitCatmorepp.Models
         [StringLength(100)]
         public string Title { get; set; }
         [DisplayName("Minimum Salary")]
+        [Range(0,999999)]
         public decimal MinSalary { get; set; }
         [DisplayName("Maximum Salary")]
+        [Range(0,999999)]
         public decimal MaxSalary { get; set; }
         [DisplayName("Job Title Id")]
         public int JobTitleId { get; set; }
