@@ -13,17 +13,14 @@ namespace RecruitCatmorepp.Models
         [Required(ErrorMessage = "First Name is a mandatory field")]
         [DisplayName("First Name")]
         [StringLength(25)]
-        [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
         public string FirstName { get; set; }
         [DisplayName("Last Name")]
         [Required(ErrorMessage = "Last Name is a mandatory field")]
         [StringLength(25)]
-        [RegularExpression(@"^[A-Z]+[a-zA-Z\s]*$")]
         public string LastName { get; set; }
         [DisplayName("Target Salary")]
         [Range(100,500000)]
-        [DataType(DataType.Currency)]
-        [Column(TypeName = "decimal(18, 2)")]
+        [Column(TypeName ="decimal(18,20")]
         public decimal TargetSalary { get; set; }
         [DisplayName("Start Date")]
         [DataType(DataType.Date)]

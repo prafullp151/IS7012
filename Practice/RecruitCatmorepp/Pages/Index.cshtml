@@ -1,0 +1,138 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <h1 class="display-4 alert-dark">Welcome</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h4 class="alert-light">
+                We are a recruiting agency. We have many mice LLCs looking to recruit Cats. <br />
+                Here are a few of those top employers
+            </h4>
+            <ul class="list-group-horizontal-sm alert-info">
+                <li>
+                    <h5>Walt Disney Mice Corporation</h5>
+                </li>
+                <li>
+                    <h5>ABC Mice Corporation</h5>
+                </li>
+                <li>
+                    <h5>Ratullie Corporation</h5>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col alert-primary">
+            <h4>
+                All other interested mice corporations, Please register
+                <a asp-page="/Companies/Create">here</a> or fill the below form
+            </h4>
+            <div class="row align-content-lg-start">
+                <form method="post">
+                    <fieldset id="companyInfo">
+                        <legend>Company Information</legend>
+                        <p>
+                            <label for="name">Name</label>
+                            <input name="name"
+                                   type="text"
+                                   class="text"
+                                   id="name"
+                                   tabindex="100"
+                                   placeholder="Company Name"
+                                   required>
+                        </p>
+                        <p>
+                            <label for="email">Mice Population</label>
+                            <input name="micepop"
+                                   type="number"
+                                   class="text"
+                                   id="micepop"
+                                   tabindex="110"
+                                   placeholder="number of mice">
+                        </p>
+                        <p>
+                            <label for="email">Email</label>
+                            <input name="email"
+                                   type="email"
+                                   class="text"
+                                   id="email"
+                                   tabindex="120"
+                                   placeholder="valid email address"
+                                   required>
+                        </p>
+                        <p>
+                            <label for="transport">Urgent</label>
+                            <input name="urgent"
+                                   type="checkbox"
+                                   id="urgent"
+                                   tabindex="130" />
+                        </p>
+                        <p>
+                            <input type="submit" name="submit2" id="submit2" value="Submit" tabindex="300">
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+        <div class="col alert-light">
+            <h4 style="text-align:left">
+                All interested Cats Please register <a asp-page="/Candidates/Create">here</a> or fill the form below.
+            </h4><br />
+            <div class="row align-content-lg-start">
+                <form method="post">
+                    <fieldset id="catInfo">
+                        <legend>Cat Information</legend>
+                        <p>
+                            <label for="catName">Name</label>
+                            <input name="name"
+                                   type="text"
+                                   class="text"
+                                   id="catName"
+                                   tabindex="100"
+                                   placeholder="Cat Name"
+                                   required>
+                        </p>
+                        <p>
+                            <label for="skills">Expertise/Skills</label>
+                            <input name="micepop"
+                                   type="text"
+                                   class="text"
+                                   id="micepop"
+                                   tabindex="110"
+                                   placeholder="Skills">
+                        </p>
+                        <p>
+                            <label for="catemail">Email</label>
+                            <input name="cat email"
+                                   type="email"
+                                   class="text"
+                                   id="catemail"
+                                   tabindex="120"
+                                   placeholder="valid email address"
+                                   required>
+                        </p>
+                        <p>
+                            <label for="canbell">Can you Bell Hunter Cat?</label>
+                            <input name="canbell"
+                                   type="radio"
+                                   id="canbell"
+                                   tabindex="130"
+                                   required />
+                        </p>
+                        <p>
+                            <input type="submit" name="submit3" id="submit3" value="Submit" tabindex="300">
+                        </p>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
